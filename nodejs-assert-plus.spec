@@ -5,7 +5,7 @@
 
 Name:           %{?scl_prefix}nodejs-assert-plus
 Version:        0.1.4
-Release:        1.1%{?dist}
+Release:        3.1%{?dist}
 Summary:        Extra assertions on top of node's assert module
 BuildArch:      noarch
 ExclusiveArch: %{nodejs_arches} noarch
@@ -47,6 +47,12 @@ rm -rf %buildroot
 %doc README.md
 
 %changelog
+* Tue Feb 16 2016 Zuzana Svetlikova <zsvetlik@redhat.com> - 0.1.4-3.1
+- Use macro in -runtime dependency
+
+* Sun Feb 14 2016 Zuzana Svetlikova <zsvetlik@redhat.com> - 0.1.4-2.1
+- Rebuilt with updated metapackage
+
 * Wed Dec 11 2013 Tomas Hrcka <thrcka@redhat.com> - 0.1.4-1.1
 - enable scl support
 
